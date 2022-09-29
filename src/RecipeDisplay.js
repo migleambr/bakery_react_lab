@@ -63,7 +63,7 @@ const cakeNames = cakes.map((cake) => cake.cakeName);
 const cakeIngredients = cakes.map((cake) => cake.ingredients);
 
 const averageRating = (ratings) => {
-    let total = ratings.reduce((total, rating) => total + rating.rating, 0);
+    let total = ratings.reduce((total, ratings) => total + ratings.rating, 0);
     return total/ratings.length;
 };
 
